@@ -7,6 +7,7 @@ import { schedulerRouter } from "./route/scheduler.route";
 
 const schedulerApp = express();
 
+schedulerApp.set("json spaces", 4);
 schedulerApp.use(cors());
 schedulerApp.use(express.json({ limit: "1mb" }));
 
@@ -42,6 +43,36 @@ schedulerApp.get("/", (_request, response) => {
         Type: "Result",
         Message: "external",
         Timestamp: "2026-04-22 17:50:30"
+      },
+      {
+        ID: "003cb427-8fc6-47f7-bb00-be228f6b0d2c",
+        Type: "Result",
+        Message: "external",
+        Timestamp: "2026-04-22 17:50:30"
+      },
+      {
+        ID: "e5c4ff20-31bf-4d40-8f02-72fda59e8918",
+        Type: "Result",
+        Message: "project-review",
+        Timestamp: "2026-04-22 17:50:18"
+      },
+      {
+        ID: "1cfce5ee-ad37-4894-8946-d707627176a5",
+        Type: "Event",
+        Message: "tech-fest",
+        Timestamp: "2026-04-22 17:50:06"
+      },
+      {
+        ID: "cf2885a6-45ac-4ba0-b548-6e9e9d4c52c8",
+        Type: "Result",
+        Message: "project-review",
+        Timestamp: "2026-04-22 17:49:54"
+      },
+      {
+        ID: "8a7412bd-6065-4d09-8501-a37f11cc848b",
+        Type: "Placement",
+        Message: "Advanced Micro Devices Inc. hiring",
+        Timestamp: "2026-04-22 17:49:42"
       }
     ]
   });
