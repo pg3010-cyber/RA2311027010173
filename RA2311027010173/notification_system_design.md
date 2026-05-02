@@ -493,3 +493,5 @@ void printTopPriorityInbox().catch((priorityFailure) => {
 ```
 
 For an initial batch of `m` notifications and top size `n = 10`, the heap approach costs `O(m log n)` and stores `O(n)` selected notifications plus the fetched batch. With continuous arrivals, the same `offer` method updates the top ten without re-sorting the full history.
+
+<!-- commit7 -->
